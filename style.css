@@ -104,6 +104,7 @@ html {
     overflow: hidden;
     animation-name: zoomIn;
     animation-duration: 1s;
+    color: white;
 }
 
 .bio {

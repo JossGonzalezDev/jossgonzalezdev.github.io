@@ -1,0 +1,145 @@
+/* Animaciones */
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        /* Escala inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+    }
+
+    to {
+        transform: scale(1);
+        /* Escala final */
+        opacity: 1;
+        /* Opacidad final */
+    }
+}
+
+/* Cambia el color de fondo del enlace cuando se pasa el ratón por encima */
+.navbar li a:hover {
+    /* Blanco con opacidad */
+    color: aqua;
+}
+
+
+body,
+html {
+    margin: 0;
+    height: 100%;
+}
+
+.wallpaper {
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.navbar {
+    /* Negro con opacidad */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Ajusta el relleno según sea necesario */
+    padding: 2px 20px;
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    right: 10%;
+    border-radius: 10px;
+    /* Usa flexbox para alinear elementos */
+    display: flex;
+    /* Alinea los elementos al principio y al final */
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Cambia el color de fondo del enlace cuando se pasa el ratón por encima */
+.navbar li a:hover {
+    /* Blanco con opacidad */
+    color: aqua;
+}
+
+.social-icons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 8px;
+}
+
+.card {
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    right: 15%;
+    bottom: 15%;
+    /* Negro con opacidad */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Ajusta el relleno según sea necesario */
+    padding: 2px 20px;
+    overflow: hidden;
+    animation-name: zoomIn;
+    animation-duration: 1s;
+}
+
+.bio {
+    display: grid;
+    grid-template-columns: 10% auto;
+    height: auto;
+}
+
+.foto {
+    padding: 10%;
+    margin: auto;
+}
+
+.picture {
+    border-radius: 50%;
+    width: 100%;
+    border: 2px solid white;
+}
+
+.info {
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: auto;
+    color: white;
+}
+
+h1 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+p {
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+.summary {
+    color: white;
+}
